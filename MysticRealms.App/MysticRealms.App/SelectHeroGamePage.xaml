@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MysticRealms.App.SelectHeroGamePage"
+             Title="Hero Select"
+             BackgroundImageSource="background_image.png">
+    <VerticalStackLayout Padding="20" Spacing="20" HorizontalOptions="Center" VerticalOptions="Center">
+
+        <!-- Header -->
+        <Label x:Name="LoggedUser"
+               Text=""
+               FontSize="20"
+               TextColor="#d3ada2"
+               HorizontalOptions="Center"
+               Margin="0,-20,0,0"/>
+        <Label Text="Choose your hero"
+       FontSize="32"
+       TextColor="#d3ada2"
+       HorizontalOptions="Center" />
+
+        <!-- Hero Selection Dropdown -->
+        <Picker x:Name="HeroPicker" 
+                Margin="0,0,0,0"
+                Title="Select a hero"
+                TextColor="White"
+                TitleColor="Gray"
+                BackgroundColor="#333333"
+                WidthRequest="250"
+                HorizontalOptions="Center">
+            <Picker.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>Knight</x:String>
+                    <x:String>Wizard</x:String>
+                    <x:String>Bandit</x:String>
+                    <x:String>Princess</x:String>
+                    <x:String>Archer</x:String>
+                </x:Array>
+            </Picker.ItemsSource>
+        </Picker>
+
+        <!-- Hero Image and Stats Log -->
+        <Grid HorizontalOptions="Center" VerticalOptions="Center">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+
+            <!-- Hero Image -->
+            <Image Grid.Column="0" x:Name="HeroImage"
+                   Source="knight.png"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   IsVisible="False"
+                   Margin="0,0,0,70">
+                <Image.HeightRequest>
+                    <OnPlatform x:TypeArguments="x:Double">
+                        <On Platform="Android" Value="130" />
+                        <On Platform="iOS, MacCatalyst, WinUI" Value="200" />
+                    </OnPlatform>
+                </Image.HeightRequest>
+                <Image.WidthRequest>
+                    <OnPlatform x:TypeArguments="x:Double">
+                        <On Platform="Android" Value="130" />
+                        <On Platform="iOS, MacCatalyst, WinUI" Value="200" />
+                    </OnPlatform>
+                </Image.WidthRequest>
+            </Image>
+
+            <!-- Stats Log (Label inside Frame) -->
+            <Frame Grid.Column="1"
+                   BackgroundColor="#2F2F2F"
+                   CornerRadius="10"
+                   Padding="10"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center"
+                   Margin="10,0,0,70"
+                   IsVisible="True">
+                <Frame.HeightRequest>
+                    <OnPlatform x:TypeArguments="x:Double">
+                        <On Platform="Android" Value="130" />
+                        <On Platform="iOS, MacCatalyst, WinUI" Value="200" />
+                    </OnPlatform>
+                </Frame.HeightRequest>
+                <Frame.WidthRequest>
+                    <OnPlatform x:TypeArguments="x:Double">
+                        <On Platform="Android" Value="150" />
+                        <On Platform="iOS, MacCatalyst, WinUI" Value="200" />
+                    </OnPlatform>
+                </Frame.WidthRequest>
+                <ScrollView>
+                    <Label x:Name="StatsLog"
+                           Text="Hero stats will be displayed here."
+                           TextColor="White"
+                           FontSize="17"
+                           LineBreakMode="WordWrap"
+                           VerticalOptions="Start"
+                           HorizontalOptions="Start"/>
+                </ScrollView>
+            </Frame>
+        </Grid>
+
+        <!-- Singleplayer and Multiplayer Buttons -->
+        <HorizontalStackLayout Spacing="10" HorizontalOptions="Center" Margin="0,-70,0,0">
+            <Button Text="Single Play"
+                    BackgroundColor="#a25f4c"
+                    TextColor="White" 
+                    FontSize="18"
+                    Clicked="btnSinglePlay"
+                    WidthRequest="150" />
+            <Button Text="Multiplayer"
+                    BackgroundColor="#a25f4c"
+                    TextColor="White" 
+                    FontSize="18"
+                    Clicked="btnMultiplayer"
+                    WidthRequest="150" />
+            <Button Text="User stats"
+                    BackgroundColor="#a25f4c"
+                    TextColor="White" 
+                    FontSize="18"
+                    Clicked="btnUserStats"
+                    WidthRequest="150" />
+        </HorizontalStackLayout>
+
+    </VerticalStackLayout>
+</ContentPage>
+

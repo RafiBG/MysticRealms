@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="MysticRealms.App.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:MysticRealms.App"
+    Shell.FlyoutBehavior="Flyout"
+    Title="MysticRealms.App"
+    Shell.NavBarIsVisible="False"
+    FlyoutBackgroundColor="#333333">
+
+    <Shell.FlyoutHeader>
+        <StackLayout>
+            <Label Text="Game menu" FontSize="20" HorizontalOptions="Center"></Label>
+        </StackLayout>
+    </Shell.FlyoutHeader>
+
+    <FlyoutItem Title="Home">
+        <ShellContent ContentTemplate="{DataTemplate local:MainPage}"></ShellContent>
+    </FlyoutItem>
+
+    <FlyoutItem Title="Register">
+        <ShellContent ContentTemplate="{DataTemplate local:RegisterPage}"></ShellContent>
+    </FlyoutItem>
+
+    <FlyoutItem Title="Login">
+        <ShellContent  ContentTemplate="{DataTemplate local:LoginPage}"></ShellContent>
+    </FlyoutItem>
+
+    <FlyoutItem Title="Select hero">
+        <ShellContent ContentTemplate="{DataTemplate local:SelectHeroGamePage}"></ShellContent>
+    </FlyoutItem>
+
+    <FlyoutItem Title="UserStats">
+        <ShellContent ContentTemplate="{DataTemplate local:ShowUserStatsPage}"></ShellContent>
+    </FlyoutItem>
+
+    
+
+    <!--<FlyoutItem Title="WinGame">
+        <ShellContent ContentTemplate="{DataTemplate local:WinGamePage}"></ShellContent>
+    </FlyoutItem>-->
+
+    <!--<FlyoutItem Title="Single Play">
+        <ShellContent ContentTemplate="{DataTemplate local:SingleGamePlayPage}"></ShellContent>
+    </FlyoutItem>-->
+
+    <!--<ShellContent Route="SinglePlayPage" ContentTemplate="{DataTemplate local:SingleGamePlayPage}" />-->
+
+    <!--<ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />-->
+
+</Shell>

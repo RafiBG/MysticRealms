@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MysticRealms.App.LoginPage"
+             BackgroundImageSource="background_image.png"
+             Title="Login">
+    <VerticalStackLayout Padding="30" Spacing="20">
+        <Label Text="Login" FontSize="34" HorizontalOptions="Center" TextColor="#d3ada2" />
+
+        <Entry x:Name="UsernameEntry" Placeholder="Username" WidthRequest="300" />
+        <Entry x:Name="PasswordEntry" Placeholder="Password" IsPassword="True" WidthRequest="300" />
+
+        <Button Text="Login" Clicked="btnLogin" BackgroundColor="#a25f4c" TextColor="White" WidthRequest="300" FontSize="18" />
+        <Button Text="Register" Clicked="btnRegister" BackgroundColor="#a25f4c" TextColor="White" WidthRequest="300" FontSize="18" />
+    </VerticalStackLayout>
+</ContentPage>

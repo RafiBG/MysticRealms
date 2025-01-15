@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MysticRealms.App.ShowUserStatsPage"
+             BackgroundImageSource="background_image.png"
+             Title="User Stats">
+    <VerticalStackLayout Padding="20" Spacing="20" HorizontalOptions="Center" VerticalOptions="Center">
+        <Label Text="User stats" FontSize="32" TextColor="White" HorizontalOptions="Center" />
+        <Label x:Name="ShowUsername" Text="User score" FontSize="18" TextColor="White" HorizontalOptions="Center" />
+        <Label x:Name="ShowScore" Text="User score" FontSize="18" TextColor="White" HorizontalOptions="Center" />
+        <Label x:Name="ShowBestScore" Text="User score" FontSize="18" TextColor="White" HorizontalOptions="Center" />
+        <Label x:Name="ShowCoins" Text="User score" FontSize="18" TextColor="White" HorizontalOptions="Center" />
+        <Label x:Name="ShowHealthPotions" Text="User score" FontSize="18" TextColor="White" HorizontalOptions="Center" />
+        <Button Text="Go back" BackgroundColor="#a25f4c" TextColor="White" FontSize="18" Clicked="btnGoBack" WidthRequest="200" />
+    </VerticalStackLayout>
+</ContentPage>
+
