@@ -35,21 +35,4 @@
         <ShellContent ContentTemplate="{DataTemplate local:ShowUserStatsPage}"></ShellContent>
     </FlyoutItem>
 
-    
-
-    <!--<FlyoutItem Title="WinGame">
-        <ShellContent ContentTemplate="{DataTemplate local:WinGamePage}"></ShellContent>
-    </FlyoutItem>-->
-
-    <!--<FlyoutItem Title="Single Play">
-        <ShellContent ContentTemplate="{DataTemplate local:SingleGamePlayPage}"></ShellContent>
-    </FlyoutItem>-->
-
-    <!--<ShellContent Route="SinglePlayPage" ContentTemplate="{DataTemplate local:SingleGamePlayPage}" />-->
-
-    <!--<ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />-->
-
 </Shell>
