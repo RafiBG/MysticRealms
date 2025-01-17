@@ -12,3 +12,4 @@ Add skins ?
 Attacks that consume your health to use
 Special abilitys
 User options ?
+Make hero stats taken from database ?
