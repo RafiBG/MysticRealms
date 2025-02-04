@@ -6,11 +6,11 @@ This game is turn based fantasy. A potential project for which it can be continu
 Made in Paisii Hilendarski University.
 
 ## To do for future
-Stuff to buy or get : Armor, Heath potions, Damage potions,
-Make multiplayer option: player vs player
-Add skins ?
-Attacks that consume your health to use
-Special abilitys
-User options ?
-Make hero stats taken from database ?
+Stuff to buy or get : Armor, Heath potions, Damage potions <br />
+Make multiplayer option: player vs player <br />
+Add skins ? <br />
+Attacks that consume your health to use <br />
+Special abilitys <br />
+User options ? <br />
+Make hero stats taken from database ? <br />
 Add player vs local AI (users own ai)
