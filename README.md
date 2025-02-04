@@ -13,3 +13,4 @@ Attacks that consume your health to use
 Special abilitys
 User options ?
 Make hero stats taken from database ?
+Add player vs local AI (users own ai)
